@@ -40,6 +40,10 @@ gulp.task('jslint', function (done) {
   return jsLint(arr);
 });
 
+gulp.task('lint', function (done) {
+  gulp.watch(paths.inputs.js, gulp.series('jslint'));
+});
+
 /* ================================ Export Tasks ============================ */
 
 /*
@@ -47,5 +51,5 @@ gulp.task('jslint', function (done) {
  */
 
  exports.default = function () {
-   gulp.watch(paths.inputs.js, gulp.series('jslint'));
+   console.log('no default task defined');
  };

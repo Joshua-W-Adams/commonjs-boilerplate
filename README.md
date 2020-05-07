@@ -22,8 +22,10 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY
 npm install
 ```
 
-4. Run Gulp task runner
+## Deployment
+
+1. Lint application
 
 ```
-gulp
+gulp lint
 ```
